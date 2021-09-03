@@ -28,6 +28,8 @@ arm/local-soname-hack.diff
 arm/local-vfp-sysdeps.diff
 arm/unsubmitted-ldso-multilib.diff
 arm/local-arm-futex.diff
+arm/0001-sys-libs-glibc-add-support-for-SHT_RELR-sections.patch
+arm/0002-tls-libwidevinecdm.so-since-4.10.2252.0-has-TLS-with.patch
 
 hppa/local-inlining.diff
 
