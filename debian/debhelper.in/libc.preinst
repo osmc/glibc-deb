@@ -23,7 +23,11 @@ if [ "$type" != abort-upgrade -a -z "$DPKG_ROOT" ]
 then
     # Check if the debconf module is available and usable
     USE_DEBCONF=
-    if [ -f /usr/share/debconf/confmodule ]; then
+    if [ "$DEBIAN_HAS_FRONTEND" ]; then
+        # Debconf is already loaded, so we already checked if the frontend
+        # is usable or not
+        USE_DEBCONF=1
+    elif [ -f /usr/share/debconf/confmodule ]; then
         # cdebconf has a working fallback mechanism in case dialog
         # is not usable, so do not try to do anything smart here
         if [ "$DEBCONF_USE_CDEBCONF" ] ; then

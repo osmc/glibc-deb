@@ -1,3 +1,11 @@
+glibc (2.31-13+deb11u2) UNRELEASED; urgency=medium
+
+  [ Aurelien Jarno ]
+  * debian/debhelper.in/libc.preinst: do not try to detect if debconf is
+    available when the debconf frontend has already been loaded.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 02 Oct 2021 14:45:44 +0200
+
 glibc (2.31-13+deb11u1) bullseye; urgency=medium
 
   [ Aurelien Jarno ]
