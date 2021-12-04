@@ -5,6 +5,8 @@ glibc (2.31-13+deb11u3) UNRELEASED; urgency=medium
     - Fix bad conversion from ISO-2022-JP-3 with iconv (CVE-2021-43396).
       Closes: #998622. 
     - Remove PIE check on amd64 to fix FTBFS with binutils 2.37.
+  * debian/debhelper.in/libc-bin.postinst: stop replacing older versions from
+    /etc/nsswitch.conf.  Closes: #998008.
 
  -- Aurelien Jarno <aurel32@debian.org>  Tue, 07 Dec 2021 23:51:16 +0100
 
