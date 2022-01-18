@@ -5,6 +5,8 @@ glibc (2.31-13+deb11u3) UNRELEASED; urgency=medium
     - Fix bad conversion from ISO-2022-JP-3 with iconv (CVE-2021-43396).
       Closes: #998622. 
     - Remove PIE check on amd64 to fix FTBFS with binutils 2.37.
+    - Fix a buffer overflow in sunrpc svcunix_create (CVE-2022-23218).
+    - Fix a buffer overflow in sunrpc clnt_create (CVE-2022-23219).
   * debian/debhelper.in/libc-bin.postinst: stop replacing older versions from
     /etc/nsswitch.conf.  Closes: #998008.
   * debian/debhelper.in/libc.preinst: drop the check for kernel release > 255
