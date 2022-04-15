@@ -1,3 +1,10 @@
+glibc (2.31-113) bullseye; urgency=medium
+
+  * Updated version to prevent upstream from controlling this package
+  * Increment versioning with upstream version + 100
+
+ -- root <root@sam-XPS-15-9550>  Fri, 15 Apr 2022 19:30:04 +0100
+
 glibc (2.31-13+deb11u3) bullseye; urgency=medium
 
   [ Aurelien Jarno ]
